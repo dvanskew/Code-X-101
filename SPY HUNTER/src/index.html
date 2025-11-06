@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spy Hunter Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="game-root">
+      <canvas id="game-canvas" width="480" height="640"></canvas>
+      <section id="hud">
+        <div class="stat">
+          <span class="label">Score</span>
+          <span id="score-value" class="value">000000</span>
+        </div>
+        <div class="stat">
+          <span class="label">High</span>
+          <span id="high-score-value" class="value">000000</span>
+        </div>
+        <div class="stat">
+          <span class="label">Lives</span>
+          <span id="lives-value" class="value">3</span>
+        </div>
+        <div class="stat">
+          <span class="label">Weapons</span>
+          <span id="weapon-value" class="value">Cannon</span>
+        </div>
+      </section>
+      <section id="overlay" hidden>
+        <div id="overlay-card">
+          <h1 id="overlay-title">Spy Hunter</h1>
+          <p id="overlay-message" class="subtitle">
+            Welcome, Agent. Pursue and neutralize enemy agents.
+          </p>
+          <ul class="controls">
+            <li>Move: Arrow Keys / WASD</li>
+            <li>Fire: J</li>
+            <li>Deploy Gadget: K</li>
+            <li>Pause: P</li>
+          </ul>
+          <p id="overlay-footer"></p>
+          <button id="start-button">Start Mission</button>
+        </div>
+      </section>
+    </main>
+    <script defer src="game.js"></script>
+  </body>
+</html>
